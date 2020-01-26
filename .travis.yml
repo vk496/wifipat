@@ -1,0 +1,12 @@
+language: generic
+
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - crunch
+      - bash
+
+script:
+    - ./test/test.sh

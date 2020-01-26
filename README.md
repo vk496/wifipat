@@ -1,6 +1,6 @@
 # How secure is your business WiFi?
 
-This projects tries to recolect the most used WiFi patterns in hotels, restaurants, etc. and allows you to check if your are falling in the same error.
+This projects tries to recolect the most used WiFi patterns in hotels, restaurants, etc. and allows you to check if you are falling in the same error with weak patterns.
 
 The only information needed to generate a list of WiFi passwords is the name of the business. For example.
 

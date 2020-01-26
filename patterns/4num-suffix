@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Append 4 numbers
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+source $DIR/common.sh
+
+function entry {
+   local name=$1
+
+   name_size=$(getStringSize $name)
+
+   total_length=$(($name_size + 4))
+
+   if [[ $total_length -lt 8 ]]; then
+      >&2 echo "'$name' too short"
+      return
+   fi
+
+   crunch $total_length $total_length -t ${name}%%%% 2>/dev/null
+}

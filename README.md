@@ -13,3 +13,6 @@ To check if your WiFi password is in the list, you can do something like this (a
 ```
 ./wifipat.sh Hotel | grep hotel2019
 ```
+
+## Note
+Please, don't use real names of business when refering to them (issues, Pull Requests, code, ...)

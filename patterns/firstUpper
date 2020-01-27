@@ -11,7 +11,7 @@ function entry {
    name_size=$(getStringSize $name)
 
    if [[ $name_size -lt 8 ]]; then
-      >&2 echo "'$name' too short"
+      >&2 echo "`basename ${BASH_SOURCE[0]}`: '$name' too short"
       return
    fi
 

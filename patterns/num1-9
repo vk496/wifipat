@@ -5,5 +5,10 @@
 function entry {
    local name=$1
 
+   echo "1234567890"
    echo "123456789"
+   echo "12345678"
+   echo "0123456789"
+   echo "012345678"
+   echo "01234567"
 }

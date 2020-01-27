@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# generate 1-9 number
+# generate some 1-9 numbers
 
 function entry {
    local name=$1

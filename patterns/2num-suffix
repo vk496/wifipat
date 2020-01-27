@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Use directly the name
+# Append 2 numbers
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 source $DIR/common.sh
@@ -10,10 +10,12 @@ function entry {
 
    name_size=$(getStringSize $name)
 
-   if [[ $name_size -lt 8 ]]; then
+   total_length=$(($name_size + 2))
+
+   if [[ $total_length -lt 8 ]]; then
       >&2 echo "`basename ${BASH_SOURCE[0]}`: '$name' too short"
       return
    fi
 
-   echo "$name"
+   crunch $total_length $total_length -t ${name}%% 2>/dev/null
 }

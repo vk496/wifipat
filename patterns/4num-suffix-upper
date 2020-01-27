@@ -1,13 +1,12 @@
 #!/bin/bash
 
-# First letter upper
+# Append 4 numbers
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 function entry {
    local name=$1
 
-   source $DIR/name
-
+   source $DIR/4num-suffix
    entry "$(tr '[:lower:]' '[:upper:]' <<< ${name:0:1})${name:1}"
 }

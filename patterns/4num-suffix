@@ -17,5 +17,5 @@ function entry {
       return
    fi
 
-   crunch $total_length $total_length -t ${name}%%%% 2>/dev/null
+   crunch $total_length $total_length $(tr '[:lower:]' '[:upper:]' <<< ${name:0:1})$(tr '[:upper:]' '[:lower:]' <<< ${name:0:1}) 0123456789 -t @${name:1}%%%% 2>/dev/null
 }
